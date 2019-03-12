@@ -1,0 +1,36 @@
+@CHARSET "ISO-8859-1";
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+
+}
+.fa-facebook {
+  background: lightgray;
+  color: white;
+}
+
+.fa-twitter {
+  background: lightgray;
+  color: white;
+}
+.fa-google-plus{
+  background: lightgray;
+  color: white;
+}
+.fa-linkedin {
+  background: lightgray;
+  color: white;
+}
+
+.fa-rss {
+  background: lightgray;
+  color: white;
+}
+.right{
+float:right;
+}
