@@ -1,5 +1,4 @@
 package org.medex.util;
-//import com.mysql.jdbc.Driver;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -15,7 +14,8 @@ public class DBUtil {
 		try {
 			Class.forName(driver);
 			con = (Connection) DriverManager.getConnection(url, uname, pwd);
-		} catch (Exception e) {
+			} 
+		catch (Exception e) {
 			e.printStackTrace();
 		}
 		return con;

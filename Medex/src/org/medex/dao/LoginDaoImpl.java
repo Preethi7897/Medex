@@ -33,7 +33,7 @@ public class LoginDaoImpl implements LoginDao {
 				role = rs1.getString(1);
 				if (role.contentEquals("patient")) {
 					pst2 = (PreparedStatement) con
-							.prepareStatement("select fname,lname from patient where id=?");
+							.prepareStatement("select fname,lname from patient where pid=?");
 					pst2.setString(1, u.getId());
 					rs2 = pst2.executeQuery();
 					if (rs2.next()) {
@@ -46,7 +46,7 @@ public class LoginDaoImpl implements LoginDao {
 					pst2.close();
 				} else if (role.contentEquals("doctor")) {
 					pst2 = (PreparedStatement) con
-							.prepareStatement("select fname,lname from doctor where id=?");
+							.prepareStatement("select fname,lname from doctor where did=?");
 					pst2.setString(1, u.getId());
 					rs2 = pst2.executeQuery();
 					if (rs2.next()) {
@@ -59,6 +59,10 @@ public class LoginDaoImpl implements LoginDao {
 					pst2.close();
 				}
 
+			}
+			else
+			{
+				res=null;
 			}
 			rs1.close();
 			pst1.close();

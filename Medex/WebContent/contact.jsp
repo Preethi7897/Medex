@@ -1,53 +1,28 @@
-<!Doctype html>
-<head>
-<title>contact us</title>
-<style>
-#social img {
-  height: 20px;
-  width: 20px;
-  padding-bottom: 20px;
-}
-#footer {
-  background-color:#f1f1f1;
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  height: 150px;
-  margin-bottom: 0px;
-}
-
-div {
-  margin: 20px 20px;
-}
-
-body {
-  margin-bottom: 50px;
-
-</style>
-</head>
-<body>
-<h1>MEDEX MEDICAL CENTER</h1>
-<h2>CONTACT US</h2>
-<p>Please fill your suggestions and feedback in  below form</p>
+<%@ include file="header.jsp"%>
+<%@ include file="home_nav.jsp"%>
+<br>
+<center><h2 style="color:dodgerblue;">Contact Us</h2></center>
+<div class="container col-xs-6 col-xs-offset-3">
+<h3 style="color:dodgerblue;">Please fill your suggestions and feedback in  below form</h3>
 <form action="" method="post">
-Name<br><input type="text" name="name" id="name"><br>
-E-mail id<br><input type="text" name="email" id="email"><br> 
-Subject Line<br><input type="text" name="subj" id="subj"><br>
-Message<br><textarea name="msg" id="msg" rows=4 columns=6></textarea><br><br>
-<input type="submit" value="submit" id="submit"><br>
+<div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="name"  name="name" >
+</div>
+<div class="form-group">
+      <label for="email">Email id:</label>
+      <input type="email" class="form-control" id="email"  name="email" >
+</div>
+<div class="form-group">
+      <label for="subj">Subject Line:</label>
+      <input type="text" class="form-control" id="subj"  name="subj" >
+</div>
+<div class="form-group">
+			<label for="msg">Message:</label>
+			<textarea rows="4" class="form-control" id="msg"
+				 name="msg"></textarea>
+</div>
+<center><input type="submit" class="btn btn-danger" value="Submit"></center>
 </form>
-
-        <div id="footer">
-  <center><h4>ADDRESS</h4><pre>123,xyz street,
-North abc,
-klm-123456 </pre>
-       </center>
-     <center>
-            <a href="#"><img src="facebook.png" alt="fb" height=20 width=20 ></a>
-            <a href="#"><img src="twitter.png" alt="twitter" height=20 width=20 ></a>
-            <a href="#"><img src="linkedin.png" alt="ln" height=20 width=20></a>
-      </center>     
-     </div>
-</body>
-</html>
+</div>
+<%@ include file="footer.jsp"%>

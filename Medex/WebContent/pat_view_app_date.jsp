@@ -6,7 +6,8 @@
 				<div class="form-group">
 					<h3>Search your Appointment By Date</h3>
 					Choose Date to Search Appointment(Required)<input type="date"
-						class="form-control" name="date" id="date" />
+						class="form-control" name="appdate" id="appdate" />
+						<span id="errMsg"></span>
 
 				</div>
 
@@ -14,4 +15,6 @@
 			</form>
 
 		</div>
-	</div>
+		<p id="pat_view"></p>
+		
+</div>

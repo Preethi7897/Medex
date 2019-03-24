@@ -1,12 +1,16 @@
 <div class="lay2"  style="color:dodgerblue;"><hr>
-<div class="container col-md-4 col-md-offset-5" >
-        <form>
-	<h2>Update The Diagnosis Information Of The Patient</h2>
-<hr style="height:3px;border:none;color:white;background-color:silver;" />
-<h4>Select Appointment Date(Required)</h4><br>
-<input type="date" name="date"><br>
-<h4>Select Available Patient</h4><br>
-<input type="text" name="date"><br><hr>
-</form>
+<div class="container col-md-7 col-md-offset-3" >
+       <form>
+                
+        <div class="form-group">
+               <h2 style="color:dodgerblue;">Update The Diagnosis Information Of The Patient</h2>
+               <hr style="background-color:silver;" />
+          Select Appointment Date(Required)<input type="date" class="form-control" name="date" id="date"/><br/>
+          Select Available Patient<input type="date" class="form-control" name="patient" id="patient"/>
+        </div>
+        
+          
+        </form>
+
 </div>
 </div>

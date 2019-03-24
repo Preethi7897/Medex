@@ -12,6 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 
 
 
+import javax.servlet.http.HttpSession;
+
 import org.medex.beans.Patient;
 import org.medex.service.PatientService;
 import org.medex.service.PatientServiceImpl;
@@ -41,11 +43,16 @@ public class PatientRegister extends HttpServlet {
         int zipcode=Integer.parseInt(request.getParameter("zipcode"));
         String city=request.getParameter("city");
 
-        boolean res=pat_serv.registerPatient(new Patient(fname,lname,pwd,age,gender,phn_number,email,address,city,zipcode));
-        if(res==true)
+        String res=pat_serv.registerPatient(new Patient(fname,  lname,  pwd, age,
+    			 gender,  email,  phn_number,  address,
+    			zipcode,  city));
+        if(res!=null)
         {
+                               HttpSession session=request.getSession();
+                               session.setAttribute("id", res);
                   RequestDispatcher rd=request.getRequestDispatcher("login.jsp");
                                                rd.forward(request, response);
+               
         }
          else
          {

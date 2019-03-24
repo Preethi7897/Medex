@@ -1,8 +1,7 @@
 <%@ include file="header.jsp"%>
 <%@ include file="home_nav.jsp"%>
-<center>
-	<h1>Welcome to Medex!!!</h1>
-	<h4>This is home page</h4>
-</center>
-</body>
-</html>
+<br>
+<div style="margin-left:17%;margin-right:17%;">
+<img src="images/home_img.jpg" width=100% height=100%>
+</div>
+<%@ include file="footer.jsp"%>

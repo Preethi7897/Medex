@@ -1,4 +1,4 @@
-"WebContent/doctor.jsp"<%@ include file="header.jsp"%>
+<%@ include file="header.jsp"%>
 <%@ include file="js/doctor_js.jsp"%>
 <%@ include file="doc_nav.jsp"%>
 <%@ include file="doc_home.jsp"%>
@@ -7,5 +7,4 @@
 <%@ include file="doc_view_all_appointment.jsp"%>	
 
 
-</body>
-</html>
+<%@ include file="footer.jsp"%>

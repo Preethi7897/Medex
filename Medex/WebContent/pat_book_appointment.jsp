@@ -5,7 +5,7 @@
 				<h3>Book a Doctor's Appointment</h3>
 				<div class="form-group">
 					Your Login id(Auto Generated)<input type="text"
-						class="form-control" name="pid" id="pid" />
+						class="form-control" name="pid" id="pid" value=<%=session.getAttribute("id") %> disabled="disabled"/>
 
 				</div>
 				<div class="form-group">

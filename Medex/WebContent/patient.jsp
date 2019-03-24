@@ -5,6 +5,4 @@
 <%@ include file="pat_book_appointment.jsp"%>
 <%@ include file="pat_view_app_date.jsp"%>	
 <%@ include file="pat_cancel_appointment.jsp"%>
-
-</body>
-</html>
+<%@ include file="footer.jsp"%>

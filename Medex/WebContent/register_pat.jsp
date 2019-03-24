@@ -2,11 +2,11 @@
 <%@ include file="home_nav.jsp"%>
 
 <div class="container col-xs-3 col-xs-offset-5">
-	<form action="pat_reg" method="post">
+	<form action="pat_reg" method="post" >
 		<div class="form-group">
 			<label for="First name">First name :</label> <input type="text"
 				class="form-control" id="fname" placeholder="Enter First name"
-				name="fname">
+				name="fname" required>
 		</div>
 		<div class="form-group">
 			<label for="Last name">Last name :</label> <input type="text"
@@ -24,40 +24,40 @@
 
 		<div class="form-group">
 			<label for="Age">Age:</label> <input type="text" class="form-control"
-				id="lname" placeholder="Enter Age" name="age">
+				id="age" placeholder="Enter Age" name="age" required>
 		</div>
 		<div class="form-group">
 			<label for="Gender">Gender:</label><br> <input type="radio"
-				name="gender" id="gender" value="male" title="select the gender">Male<br>
-			<input type="radio" name="gender" id="gender" value="female">Female<br>
+				name="gender" id="gender" value="male" title="select the gender" required>Male<br>
+			<input type="radio" name="gender" id="gender" value="female" required>Female<br>
 		</div>
 
 		<div class="form-group">
 			<label for="Contact Number">Contact Number:</label> <input
 				type="text" class="form-control" id="phn_number"
-				placeholder="Enter Contact Number" name="phn_number">
+				placeholder="Enter Contact Number" name="phn_number" required>
 		</div>
 		<div class="form-group">
 			<label for="Email">Email:</label> <input type="email"
 				class="form-control" id="email" placeholder="Enter Email"
-				name="email">
+				name="email" required>
 		</div>
 		<div class="form-group">
 			<label for="address">Address:</label>
 			<textarea rows="5" class="form-control" id="address"
-				placeholder="Enter Address" name="address"></textarea>
+				placeholder="Enter Address" name="address" required></textarea>
 		</div>
 		<div class="form-group">
 			<label for="Zipcode">Zipcode:</label> <input type="text"
 				class="form-control" id="zipcode" placeholder="Enter Zipcode"
-				name="zipcode">
+				name="zipcode" required>
 		</div>
 		<div class="form-group">
 			<label for="City">City:</label> <input type="text"
-				class="form-control" id="city" placeholder="Enter City" name="city">
+				class="form-control" id="city" placeholder="Enter City" name="city" required>
 		</div>
-		<input type="submit" class="btn btn-danger" value="Register">
-		<input type="reset" class="btn btn-danger" value="Reset">
+		<input type="submit" class="btn btn-danger col-xs-6 " value="Register" >
+		<input type="reset" class="btn btn-danger col-xs-5 col-xs-offset-1" value="Reset">
 
 	</form>
 </div>
@@ -136,9 +136,8 @@ myInput.onkeyup = function() {
     length.classList.add("invalid");
   }
 }
-   
+
 
 </script>
 
-</body>
-</html>
+<%@ include file="footer.jsp"%>

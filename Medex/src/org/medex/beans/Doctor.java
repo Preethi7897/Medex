@@ -14,7 +14,9 @@ public class Doctor {
 	public Doctor()
 	{
 	}
-	public Doctor(String fname, String lname,String pwd, String gender,
+	
+	
+	public Doctor( String fname, String lname, String pwd,String gender,
 			int age, String qualification, String specialization,
 			String contact_no, String email, String address, int zipcode,
 			String city) {
@@ -32,6 +34,8 @@ public class Doctor {
 		this.zipcode = zipcode;
 		this.city = city;
 	}
+
+
 	public String getPwd() {
 		return pwd;
 	}
@@ -104,6 +108,7 @@ public class Doctor {
 	public void setCity(String city) {
 		this.city = city;
 	}
+	
 	
 	
 

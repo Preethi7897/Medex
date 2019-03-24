@@ -16,17 +16,30 @@
     <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
    <link rel="stylesheet" href="styles/header_style.css">
 <link rel="stylesheet" href="styles/pat_reg.css">
-
+<link rel="stylesheet" href="styles/about_style.css">
 </head>
 <body>
-	<div class="right">
-		<a href="#" class="fa fa-facebook"></a> <a href="#"
-			class="fa fa-twitter"></a> <a href="#" class="fa fa-google-plus"></a>
-		<a href="#" class="fa fa-linkedin"></a> <a href="#" class="fa fa-rss"></a>
-		<p class="right-justify">
-			Call us : <a>1-899-699-9999</a>
-		</p>
-		<p>
-			Austin,TX 78705-1006 <a>enquire@medex.com</a>
+<div class="container col-xs-12" style="width:100%">
+	<div class="row" >
+	<div class="col-xs-2 ">
+	<br/>
+	<img src="images/logo.png" width=120 height=80>
+	</div>
+	<div class="col-xs-6 col-xs-offset-1">
+	<h1 style="color:dodgerblue;">MEDEX MEDICAL CENTER</h1>
+	</div>
+		<div class="col-xs-3 ">
+		<a href="#" class="fa fa-facebook"></a> 
+		<a href="#" class="fa fa-twitter"></a> 
+		<a href="#" class="fa fa-google-plus"></a>
+		<a href="#" class="fa fa-linkedin"></a> 
+		<a href="#" class="fa fa-rss"></a>
+		<p >
+			Call us : <a href="#">1-899-699-9999</a><br>
+			Austin,TX 78705-1006 
+			<a href="#">enquire@medex.com</a>
 		</p>
 	</div>
+	</div>
+	</div>
+	
